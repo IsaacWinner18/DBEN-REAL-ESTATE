@@ -1,0 +1,13 @@
+.menu-bar {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border: 0.01px solid rgb(194, 192, 192);
+}
+.font-one {
+    font-family: serif;
+    letter-spacing: 1px;
+}
+.font-two {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
