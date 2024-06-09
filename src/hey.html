@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Count-Up Animation Example</title>
+  <style>
+    .counter {
+      font-size: 2em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="counter" id="customerCount">0</div>
+
+  <script>
+    function countUp(element, start, end, duration) {
+      let startTime = null;
+      const step = (timestamp) => {
+        if (!startTime) startTime = timestamp;
+        const progress = Math.min((timestamp - startTime) / duration, 1);
+        element.innerText = Math.floor(progress * (end - start) + start).toLocaleString();
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        }
+      };
+      requestAnimationFrame(step);
+    }
+
+    const customerCount = document.getElementById('customerCount');
+    countUp(customerCount, 0, 5000, 3000); // Count from 0 to 5000 over 3 seconds
+  </script>
+</body>
+</html> 
