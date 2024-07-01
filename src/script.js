@@ -1,3 +1,23 @@
+const toggNav = document.querySelector(".hid");
+const menubarr = document.querySelector(".toggfunc");
+const menubarrtwo = document.querySelector(".menu-bar-nav");
+
+menubarrtwo.addEventListener("click", () => {
+  toggNav.style.display = "none";
+});
+
+menubarr.addEventListener("click", () => {
+  if (toggNav.style.display === "block") {
+    toggNav.style.display = "none";
+  } else {
+    toggNav.style.display = "block";
+    
+  }
+});
+
+
+
+
 function countUp(element, start, end, duration) {
     let startTime = null;
     const step = (timestamp) => {
@@ -10,7 +30,7 @@ function countUp(element, start, end, duration) {
     };
     requestAnimationFrame(step);
   }
-  
+
   function createObserver(element, start, end, duration) {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -20,18 +40,18 @@ function countUp(element, start, end, duration) {
         }
       });
     }, { threshold: 0.5 });
-  
+
     observer.observe(element);
   }
-  
+
   const customerCount = document.getElementById('customerCount');
   const projectCount = document.getElementById('projectCount');
   const awardcount = document.getElementById('awardcount');
-  
-  createObserver(projectCount, 0, 1.4, 3000); // Count from 0 to 1.4 over 3 seconds
-  createObserver(customerCount, 1, 170, 3000); // Count from 1 to 170 over 3 seconds
-  createObserver(awardcount, 1, 200, 3000); // Count from 1 to 170 over 3 seconds
-  
+
+  createObserver(projectCount, 0, 300, 3000); // Count from 0 to 1.4 over 3 seconds
+  createObserver(customerCount, 1, 100, 3000); // Count from 1 to 170 over 3 seconds
+  createObserver(awardcount, 1, 100, 3000); // Count from 1 to 170 over 3 seconds
+
   window.addEventListener('load', function() {
     // Hide the preloader
     document.getElementById('preloader').style.display = 'none';
