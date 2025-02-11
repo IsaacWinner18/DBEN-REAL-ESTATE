@@ -1,6 +1,17 @@
 const toggNav = document.querySelector(".hid");
 const menubarr = document.querySelector(".toggfunc");
 const menubarrtwo = document.querySelector(".menu-bar-nav");
+const video = document.getElementById('myVideo');
+const unmutebutton = document.getElementById('unmuteButton');
+
+
+
+unmutebutton.addEventListener('click', () => {
+  // Remove muted attribute so that the video plays with sound
+  video.muted = false;
+  console.log(video.muted)
+  unmutebutton.style.display = 'none';
+});
 
 menubarrtwo.addEventListener("click", () => {
   toggNav.style.display = "none";

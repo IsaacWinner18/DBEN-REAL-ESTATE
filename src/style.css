@@ -132,3 +132,14 @@ width: 34rem;
   0%  {transform:translateY(5px) rotate(calc(  0deg + var(--d,0deg)))}
   100%{transform:translateY(5px) rotate(calc(-90deg + var(--d,0deg)))}
 }
+
+.flexx {
+  width: 85%;
+}
+
+@media (min-width: 550px) {
+  .flexx {
+    width: 25%;
+    /* height: 10%; */
+  }
+  }
