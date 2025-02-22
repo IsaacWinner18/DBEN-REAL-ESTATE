@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/6a14b992e4.js"
       crossorigin="anonymous"
@@ -18,14 +17,20 @@
     <div id="content">
       <nav class="flex items-center justify-between">
         <div class="">
-          <img src="./img/transparent DBen.png" width="120px" />
+          <a href="index.html">
+
+            <img src="https://res.cloudinary.com/dkfmaqtpy/image/upload/v1740232893/transparent_DBen_c86mwn.png" width="120px" />
+          </a>
         </div>
 
         <div class="flex items-center gap-4">
           <!-- <div class="font-light text-base">
-        CONTACT US
-        <hr />
-      </div> -->
+            <a href="contact.html">
+
+              CONTACT US
+            </a>
+          <hr />
+        </div> -->
           <div class="menu-bar mr-5 rounded-full toggfunc">
             <div class="bg-white w-5 h-0.5 mb-1 opacity-100"></div>
             <div class="bg-white w-5 h-0.5"></div>
@@ -33,10 +38,11 @@
         </div>
       </nav>
 
-      <section class="bg-red-950 w-full h-full absolute top-0 hidden z-50 hid">
+
+      <section class="bg-red-900 w-full h-full absolute top-0 z-50 hidden hid">
         <nav class="flex items-center justify-between">
           <div class="">
-            <img src="./img/transparent DBen.png" width="120px" />
+            <img src="https://res.cloudinary.com/dkfmaqtpy/image/upload/v1740232893/transparent_DBen_c86mwn.png" width="120px" />
           </div>
 
           <div class="flex items-center gap-4">
@@ -52,10 +58,10 @@
         </nav>
 
         <ul
-          class="text-3xl md:text-5xl ml-5 md:ml-28 mt-20 md:mt-40 space-y-6 font-extrabold md:font-bold"
+          class=" text-3xl md:text-5xl ml-5 md:ml-28 mt-20 md:mt-40 space-y-6 font-extrabold md:font-bold z-50 hover:text-neutral-300"
         >
           <li>
-            <a href="index.html">Home</a>
+            <a href="index.html"  class="hover:text-neutral-800">Home</a>
           </li>
           <li>
             <a href="contact.html">Contact Us</a>
@@ -63,9 +69,9 @@
           <li>
             <a href="about.html">About Us</a>
           </li>
-          
         </ul>
       </section>
+
 
       <div class="mr-2 ml-2 mb-20">
         <div
@@ -86,7 +92,7 @@
                 Contact Us
               </div>
               <div class="flex justify-center text-center items-center">
-                <a href="#" class="text-sm font-bold">HOME /</a>
+                <a href="index.html" class="text-sm font-bold">HOME /</a>
                 <span class="text-sm opacity-90">CONTACT US</span>
               </div>
             </div>
@@ -180,7 +186,7 @@
                 <!-- Mission Statement and Contact Info -->
                 <div class="mb-20 md:mt-24">
                     <div class="text-center md:text-left">
-                        <img src="./img/transparent DBen.png" width="120px" alt="Company Logo" class="mx-auto md:mx-0">
+                        <img src="https://res.cloudinary.com/dkfmaqtpy/image/upload/v1740232893/transparent_DBen_c86mwn.png" width="120px" alt="Company Logo" class="mx-auto md:mx-0">
                     </div>
                     <div class="mt-4">
                         <p class="text-sm md:text-base mb-3">Creating lasting value and prosperity through strategic international and local property investments.</p>
@@ -248,5 +254,5 @@
     </div>
   </body>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </html>

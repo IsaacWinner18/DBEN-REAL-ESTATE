@@ -18,14 +18,8 @@
 }
 
 .hid {
-  display: none; /* Hide the element by default */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  background-color: #ff0000; /* Adjust the background color as needed */
-  transition: all 0.3s ease-in-out; /* Smooth transition for the expansion */
+  background-color: #701515; 
+  transition: all 0.3s ease-in-out; 
 }
 
 .hid.show {
